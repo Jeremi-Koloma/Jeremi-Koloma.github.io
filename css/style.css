@@ -1,16 +1,12 @@
 
 body {
-    background: #5C6269 !important;
+    background: #21272F !important;
     font-family: 'Poppins',Roboto, sans-serif;
   }
   /* main-header start */
   [data-target="#mainMenu"] {
     position: relative;
     z-index: 999;
-  }
-  .logo{
-    width: 70px;
-    height: 20px;
   }
   
   #mainMenu li > a {
@@ -36,8 +32,8 @@ body {
     position: absolute;
     content: "";
     width: calc(100% - 1px);
-    height: 1px;
-    background: #fff;
+    height: 1.5px;
+    background: #FD9800;
     bottom: -6px;
     left: 0;
   
@@ -97,7 +93,7 @@ body {
     color: #fff;
   }
   .main-header .navbar-brand img {
-    max-width: 40px;
+    max-width: 100px;
     animation: fadeInLeft 0.4s both 0.4s;
   }
   /* main-header end */
