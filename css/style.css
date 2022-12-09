@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,700&display=swap');
+
 body {
-  background: #21272F !important;
+  /*background: #21272F !important;*/
   font-family: 'Poppins', Roboto, sans-serif;
   color: #fff;
+}
+
+.ranger1 {
+  display: flex;
+  align-items: center;
+  /* centrer verticalement */
+  justify-content: center;
+  /* centrer Horizonta */
+  min-height: 100vh;
 }
 
 .profileImg img {
@@ -207,21 +218,81 @@ body {
 }
 
 .contourProfil {
-  margin-top: 5%;
+  width: 100%;
+  height: 100vh;
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.91), rgba(0,0,0,0.5)), url(../images/Banner_background.jpg);*/
+  background-image: url(../images/banner1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .titleDevelopper {
   font-size: 4.5rem;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 3px;
 }
 
 .titleSouTitle {
-  font-size: 2rem;
-  position: relative;
+  margin-bottom: 0;
+}
+
+.titleSouTitle::before {
+  content: "Web & Mobile";
   top: -25px;
   letter-spacing: 1px;
-  font-weight: 500;
+  position: relative;
+  font-size: 3rem;
+  font-weight: 600;
+  animation: animate 8s infinite;
+}
+
+@keyframes animate {
+  0% {
+    font-size: 3rem;
+    opacity: 1;
+  }
+
+  25% {
+    font-size: 2rem;
+    opacity: 0;
+  }
+
+  50% {
+    font-size: 3rem;
+    opacity: 1;
+  }
+
+  65% {
+    font-size: 2rem;
+    opacity: 0;
+  }
+
+  80% {
+    font-size: 3rem;
+    opacity: 1;
+    content: 'Full Stack';
+    color: #FD9800;
+  }
+
+  90% {
+    font-size: 2rem;
+    opacity: 0;
+  }
+
+  100% {
+    font-size: 3rem;
+    opacity: 1;
+    content: "Web & Mobile";
+  }
+
+}
+
+.trait {
+  width: 100px;
+  height: 2px;
+  background: #FD9800;
+  position: relative;
+  right: 0;
 }
 
 .downloadCV {
@@ -236,14 +307,18 @@ body {
 
 .titlePorfile {
   letter-spacing: 1px;
+  font-style: normal;
+  line-height: 34px;
+  font-weight: 100;
+  text-align: justify;
 }
 
 /* ---------- Services ------------ */
-.containerService{
+.containerService {
   background: #111111;
 }
 
-.titleService{
+.titleService {
   font-size: 3.5rem;
   font-weight: 600;
 }
