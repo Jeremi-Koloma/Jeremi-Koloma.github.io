@@ -165,7 +165,7 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: #faf9f8;
 }
 
 @media (min-width: 992px) {
@@ -183,7 +183,7 @@ a:focus {
         background: #ffffff !important;
     }
     
-    .navbar .navbar-brand {
+    .navbar .navbar-brand { /*  ------------------------------- Etape --------*/
         color: #ffffff;
     }
     
@@ -248,7 +248,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);
+    background: url(../img/bannerBg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
